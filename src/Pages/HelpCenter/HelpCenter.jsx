@@ -48,7 +48,7 @@ const HelpCenter = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                         <h3 className="text-xl font-semibold text-gray-800">How to use Docs Wallet</h3>
-                        <p className="text-gray-600 mt-2">Learn how to set up your wallet, upload documents, and more.</p>
+                        <p className="text-gray-600 mt-2">Learn how to set up your wallet, upload documents and more.</p>
                         <a href="/help/docs-wallet" className="text-blue-600 mt-4 block">Read Article →</a>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
