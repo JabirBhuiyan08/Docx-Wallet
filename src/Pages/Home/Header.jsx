@@ -13,9 +13,9 @@ const Header = () => {
               <span className="text-blue-700 font-bold">Docx</span> Wallet
             </h1>
             <p>
-              Username - <span>docxwallet</span>
+              Username - <span>Docxwallet</span>
             </p>
-            <p>Company- docx Wallets pte ltd</p>
+            <p>Company- Docx Wallets pte ltd</p>
             <p>Work permit Number- 123456</p>
 
             <h1 className="text-xl font-bold text-blue-800">Edit Account</h1>
