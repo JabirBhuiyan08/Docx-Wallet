@@ -15,7 +15,7 @@ const ProfileHeader = () => {
                         </h1>
                         <p className='text-blue-600'>Username - <span>{user.displayName}</span></p>
                         <h1 className='text-blue-600'>Email: {user.email}</h1>
-                        <p>Company- docx Wallets pte ltd</p>
+                        <p>Company- docx Wallets LTD</p>
                         <p>Work permit Number- 123456</p>
             
                         <h1 className="text-xl font-bold text-blue-800">Edit Account</h1>
