@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from "../../assets/logo-2.png";
 import useAuth from '../../hooks/useAuth';
 
 const ProfileHeader = () => {
