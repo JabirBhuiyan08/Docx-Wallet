@@ -42,7 +42,7 @@ const DataPolicy = () => {
                     Privacy & Data Policy
                 </h1>
                 <p className="text-gray-600 mb-10 text-center text-lg">
-                    At <strong>DocsWallet</strong> we are committed to protecting your privacy. This policy outlines what data we collect, how we use it, and your rights as a user.
+                    At <strong>DocsWallet</strong>, we are committed to protecting your privacy. This policy outlines what data we collect, how we use it, and your rights as a user.
                 </p>
 
                 <div className="space-y-10">
