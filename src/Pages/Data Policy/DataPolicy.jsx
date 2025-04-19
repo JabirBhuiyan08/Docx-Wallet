@@ -4,55 +4,67 @@ import { ShieldCheck, FileText, Lock, User, RefreshCw } from 'lucide-react';
 const sections = [
     {
         icon: <FileText className="w-6 h-6 text-blue-500" />,
-        title: "1. Data Collection",
-        description: "We only collect essential information such as your name, email, and documents you upload to ensure a smooth user experience."
+        title: "Information We Collect",
+        description:
+            "We collect personal information such as your name, email address, and uploaded documents solely for account creation, authentication, and service enhancement purposes.",
     },
     {
         icon: <User className="w-6 h-6 text-green-500" />,
-        title: "2. Data Usage",
-        description: "Your data is used strictly for authentication, storage, and enabling sharing. We do not sell or rent your personal info."
+        title: "How We Use Your Information",
+        description:
+            "Your information is used to provide, maintain, and improve our services. We do not sell or rent your personal data to third parties under any circumstances.",
     },
     {
         icon: <Lock className="w-6 h-6 text-red-500" />,
-        title: "3. Data Security",
-        description: "We implement encryption and secure storage practices. All access is monitored to protect your sensitive information."
+        title: "Data Protection & Security",
+        description:
+            "We use industry-standard encryption and secure storage technologies to protect your data. Access to your information is strictly limited to authorized personnel.",
     },
     {
         icon: <ShieldCheck className="w-6 h-6 text-purple-500" />,
-        title: "4. User Rights",
-        description: "You can access or delete your data anytime. If you delete your account, all data will be permanently removed."
+        title: "Your Rights & Choices",
+        description:
+            "You have the right to access, update, or delete your personal data at any time. Deleting your account will result in the permanent removal of all associated data.",
     },
     {
         icon: <RefreshCw className="w-6 h-6 text-yellow-500" />,
-        title: "5. Policy Updates",
-        description: "We may update this policy from time to time. Significant changes will be communicated via email or in-app notifications."
+        title: "Changes to This Policy",
+        description:
+            "We may update this Data Policy from time to time. Any significant changes will be communicated via email or through in-app notifications.",
     },
 ];
 
 const DataPolicy = () => {
     return (
-        <div className="max-w-4xl mx-auto px-6 py-10">
-            <div className="bg-white shadow-xl rounded-2xl p-8 border border-gray-200">
-                <h1 className="text-4xl font-bold text-blue-700 mb-6 text-center">📄 DocsWallet Data Policy</h1>
-                <p className="text-gray-600 mb-10 text-center">
-                    Your privacy is our priority. Here's how we handle your data with care and transparency.
+        <div className="max-w-4xl mx-auto px-6 py-12">
+            <div className="bg-white shadow-xl rounded-2xl p-10 border border-gray-200">
+                <h1 className="text-4xl font-bold text-blue-700 mb-4 text-center">
+                    Privacy & Data Policy
+                </h1>
+                <p className="text-gray-600 mb-10 text-center text-lg">
+                    At <strong>DocsWallet</strong>, we are committed to protecting your privacy. This policy outlines what data we collect, how we use it, and your rights as a user.
                 </p>
 
-                <div className="space-y-8">
+                <div className="space-y-10">
                     {sections.map((section, index) => (
                         <div key={index} className="flex items-start gap-4">
                             <div className="mt-1">{section.icon}</div>
                             <div>
-                                <h2 className="text-xl font-semibold text-gray-800">{section.title}</h2>
-                                <p className="text-gray-600 mt-1">{section.description}</p>
+                                <h2 className="text-xl font-semibold text-gray-800 mb-1">
+                                    {section.title}
+                                </h2>
+                                <p className="text-gray-600 text-base">{section.description}</p>
                             </div>
                         </div>
                     ))}
                 </div>
 
-                <div className="mt-10 text-center text-sm text-gray-500">
-                    For any questions, reach out at{' '}
-                    <a href="mailto:support@docswallet.com" className="text-blue-600 underline">
+                <div className="mt-12 text-center text-sm text-gray-500">
+                    Have questions or concerns? Contact us at{" "}
+                    <a
+                        href="mailto:support@docswallet.com"
+                        className="text-blue-600 underline"
+                    >
                         support@docswallet.com
                     </a>
                 </div>
