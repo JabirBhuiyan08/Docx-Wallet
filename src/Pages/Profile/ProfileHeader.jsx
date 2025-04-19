@@ -23,7 +23,7 @@ const ProfileHeader = () => {
                     </div>
                     <div className="flex flex-col font-bold items-center gap-4">
                       QR Code
-                      <small className='text-blue-600'>Download QR Code</small>
+                      <small className='text-blue-600'>Download QR</small>
                     </div>
                   </div>
         </div>
