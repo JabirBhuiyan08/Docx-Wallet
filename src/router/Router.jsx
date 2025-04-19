@@ -5,6 +5,8 @@ import Profile from "../Pages/Profile/Profile";
 import DataPolicy from "../Pages/Data Policy/DataPolicy";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import HelpCenter from "../Pages/HelpCenter/HelpCenter";
+import Login from "../Pages/Login/Login";
+import PrivateRoute from "./PrivateRoute";
 
 
 export const Router = createBrowserRouter([
@@ -18,7 +20,11 @@ export const Router = createBrowserRouter([
             },
             {
                 path: "profile",
-                element: <Profile></Profile>,
+                element: <PrivateRoute> <Profile></Profile></PrivateRoute>,
+            },
+            {
+                path: "login",
+                element: <Login></Login>,
             },
             {
                 path: "data-policy",
