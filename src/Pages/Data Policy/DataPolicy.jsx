@@ -39,7 +39,7 @@ const DataPolicy = () => {
         <div className="max-w-4xl mx-auto px-6 py-12">
             <div className="bg-white shadow-xl rounded-2xl p-10 border border-gray-200">
                 <h1 className="text-4xl font-bold text-blue-700 mb-4 text-center">
-                    Privacy & Data Policy
+                    Privacy & Data Policy. 
                 </h1>
                 <p className="text-gray-600 mb-10 text-center text-lg">
                     At <strong>DocsWallet</strong>, we are committed to protecting your privacy. This policy outlines what data we collect, how we use it, and your rights as a user.
