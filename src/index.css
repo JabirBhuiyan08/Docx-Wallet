@@ -29,3 +29,16 @@
     transform: translateY(0); /* Keep it in place when clicked */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Less shadow on click */
 }
+
+/* Force light mode */
+html {
+    color-scheme: light !important;
+    background-color: white !important;
+  }
+  
+  /* Optional: override dark mode text */
+  body {
+    color: black !important;
+    background-color: white !important;
+  }
+  
