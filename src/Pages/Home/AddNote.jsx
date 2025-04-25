@@ -20,26 +20,26 @@ const AddNote = () => {
 
 {/* CV, Certificate, NID, Passport, Birth Certificate, Social Address, Work Permit */}
       <div className="flex flex-col justify-center items-center mt-10">
-        <div className="grid grid-cols-3 gap-10 mt-10 ">
-          <div className="w-52">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 mt-10 ">
+          <div className="lg:w-52">
             <img src={cv} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={Certificate} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={BirthCertificate} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={NID} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={Passport} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={SocialAddress} alt="" />
           </div>
-          <div className="w-52">
+          <div className="lg:w-52">
             <img src={WorkPermit} alt="" />
           </div>
         </div>

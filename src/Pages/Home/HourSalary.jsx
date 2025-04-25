@@ -7,7 +7,7 @@ const HourSalary = () => {
         <div className="text-3xl font-bold">
           <h1>Hour $ Salary -</h1>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-col lg:flex-row gap-4 items-center">
             <h1 className="font-bold ">Example: </h1>
             <h1 className="font-bold ">Hourly Rate:</h1>
             <h1 className="border-4 border-black rounded-2xl p-2 font-bold text-green-500">10.00 hr</h1>

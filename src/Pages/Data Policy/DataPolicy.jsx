@@ -60,7 +60,7 @@ const DataPolicy = () => {
                 </div>
 
                 <div className="mt-12 text-center text-sm text-gray-500">
-                    Have questions or concerns Contact us at{" "}
+                    Have questions or concerns? Contact us at{" "}
                     <a
                         href="mailto:support@docswallet.com"
                         className="text-blue-600 underline"
