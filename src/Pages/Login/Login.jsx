@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import useAuth from "../../hooks/useAuth";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-  const { googleSignIn } = useAuth();
-  const [user, setUser] = useState(null);
+  const { googleSignIn, user } = useAuth();
+  
+  
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
 
-  const handleGoogleSignIn = () => {
-    googleSignIn()
-      .then(result => {
-        setUser(result.user); // store user info in state
-      })
-      .catch(error => {
-        console.error("Google sign-in error:", error);
-      });
+    } catch (error) {
+      if (error.code === 'auth/popup-closed-by-user') {
+        alert('Please complete the sign-in process');
+      } else {
+        alert(`Sign-in error: ${error.message}`);
+      }
+    }
   };
 
   return (
@@ -27,6 +31,7 @@ const Login = () => {
               alt="User Profile"
               className="w-20 h-20 rounded-full mx-auto mt-4"
             />
+            <Link to="/profile" className="btn btn-primary mt-4">Profile</Link>
           </div>
         ) : (
           <>
